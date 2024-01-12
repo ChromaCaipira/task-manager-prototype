@@ -1,5 +1,5 @@
 * {
-    color: #fff;
+    color: #6702B2;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,16 +11,16 @@ body {
     overflow: hidden;
 }
 
-h1 {
-    font-weight: 700;
-    font-size: 8em;
-    width: fit-content;
-}
-
 a {
     font-weight: 500;
     font-size: 1.3em;
     text-decoration: none;
+}
+
+h1 {
+    margin-bottom: 2vh;
+    font-size: 2em;
+    color: #6706B2;
 }
 
 p {
@@ -34,11 +34,35 @@ ul {
     list-style-type: none;
 }
 
+input {
+    width: 90%;
+    margin-bottom: 2vh;
+    padding: 24px 40px 24px 12px;
+    border-radius: 15px;
+    border: 1px solid #6702B2;
+}
+
+input:focus {
+    outline: 2px solid #6706B2;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh;
+}
+
 .container {
     display: flex;
     padding: 24px;
     align-items: center;
+}
+
+.container div {
     flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
 }
 
 .item {
@@ -55,4 +79,48 @@ ul {
 
 .active:hover {
     color: #b47222;
+}
+
+#left-section {
+    width: 100%;
+    max-width: 100%;
+}
+
+#left-section section {
+    background-color: #fff;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-inline: 80px;
+    height: 95vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#go-back {
+    padding-bottom: 0;
+    width: fit-content;
+    position: absolute;
+}
+
+#sign-in {
+    background-color: #FF8E01;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+    width: 80%;
+    border-radius: 15px;
+    padding: 15px;
+    padding-inline: 20px;
+}
+
+#sign-in:hover {
+    background-color: #b47222;
+}
+
+#right-section {
+    width: 84%;
+    max-width: 100%;
+    background-image: url('../images/background.png');
+    background-size: 75vh;
+    background-repeat: repeat;
 }
